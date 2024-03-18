@@ -1,0 +1,82 @@
+@import "../../../css-config/mixins.scss";
+@import "../../../css-config/Theme.scss";
+@import "../../../css-config/Style.scss";
+
+
+
+.container{
+    position: relative;
+    text-align: justify;
+    .description-container{
+        @include md{
+            // max-width: 800px;
+            margin: 40px auto 20px;
+            padding-top: 10px;
+        }
+        .floating-image{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            max-width: 100%;
+            border-radius: 20px;
+            @include md{
+                max-width: 50%;
+                border-radius: 20px
+            }
+        }
+        .left{
+            @include md{
+                float: left;
+                margin-right: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .right{
+            @include md{
+                float: right;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+        .text{
+            color: var(--text);
+        }
+    }
+}    
+
+.button{
+    color: #fff;
+    background-image: linear-gradient(to right, var(--navColor1) 0%, var(--navColor2) 100%);
+}
+
+
+// Goverment Scemes
+
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+.add{
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+@import '../../../../css-config/mixins.scss';
+@import '../../../../css-config/Theme.scss';
+
+.video-text{
+    padding-top: 2rem;
+    // overflow-x: hidden;
+}
+
+.marathi1{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    /* font-family: 'Tiro Devanagari Marathi', serif; */
+}
+.marathi2{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Tiro Devanagari Marathi', serif;
+    color: var(--text);
+}

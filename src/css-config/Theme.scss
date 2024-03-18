@@ -1,0 +1,61 @@
+@import './mixins.scss';
+
+:root {
+    background-color: #e6eafc;
+    --bg-heading: #081b6d;
+    --txt-heading: #000000;
+
+    --navColor1: #002d55;
+    --navColor2: #00f2fe;
+    --footerColor1: #002d55;
+    --footerColor2: #00f2fe;
+    --cardColor: #fdf7f7;
+    --text: #000000;
+    --title: #585353f5;
+}
+
+.dark-theme {
+    background-color: #282626;
+    --bg-heading: #301E67;
+    --txt-heading: #EEF1FF;
+
+    --navColor1: #6d0d80;
+    --navColor2: #ff30c1;
+    --footerColor1: #6d0d80;
+    --footerColor2: #ff30c1;
+    --cardColor: #515050;
+    --text: #fffbfb;
+    --title: #dd0101f5;
+}
+
+.light-theme {
+    background-color: #e6eafc;
+    --bg-heading: #081b6d;
+    --txt-heading: #000000;
+
+    --navColor1: #002d55;
+    --navColor2: #00f2fe;
+    --footerColor1: #002d55;
+    --footerColor2: #00f2fe;
+    --cardColor: #fdf7f7;
+    --text: #000000;
+    --title: #585353f5;
+}
+
+.navColor{
+    background-image: linear-gradient(to right, var(--navColor1) 0%, var(--navColor2) 100%);
+}
+.footerColor{
+    background-image: linear-gradient(to right, var(--footerColor1) 0%, var(--footerColor2) 100%);
+}
+
+
+.marathi2{
+    color: var(--txt-heading);
+}
+
+.paginate{
+    background-color: var(--cardColor);
+    color: var(--text);
+    border: none;
+}

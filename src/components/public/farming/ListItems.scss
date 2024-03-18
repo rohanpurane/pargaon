@@ -1,0 +1,79 @@
+@import "../../../css-config/mixins.scss";
+@import "../../../css-config/Theme.scss";
+
+
+.content{
+    @include md{
+        min-height: 80vh;
+    }
+}
+
+.gride{
+    display: grid;
+    grid-template-columns: repeat((2, 1fr));
+    grid-gap: 10px;
+    @include md{
+        display: grid;
+        grid-template-columns: repeat((3, 1fr));
+        grid-gap: 10px;
+    }
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat((6, 1fr));
+        grid-gap: 20px;
+    }
+    @include xxl{
+        display: grid;
+        grid-template-columns: repeat((6, 1fr));
+        grid-gap: 20px;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: var(--cardColor);
+        img{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            align-self: center;
+            border-radius: 25px;
+            @include xxl{
+                width: 150px;
+                height: 150px;
+                align-self: center;
+                border-radius: 25px;
+            }
+        }
+        .text{
+            color: var(--text);
+        }
+    }
+}
+
+
+.advertise{
+    @include md{
+        flex-wrap: wrap;
+    }
+    .add{
+        height: 25%;
+        width: 100%;
+        padding: .5rem;
+        @include md{
+            width: 25%;
+            height: 25%;
+            padding: .5rem;
+        }
+    }
+}
+// .add{
+//     width: 100%;
+//     padding: .5rem;
+//     @include md {
+//         height: 350pxl;
+//         width: 350pxl;
+//         padding: .5rem;
+
+//     }
+// }

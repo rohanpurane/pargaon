@@ -1,0 +1,129 @@
+@import '../../../css-config/mixins.scss';
+@import '../../../css-config/Theme.scss';
+@import '../../../css-config/Style.scss';
+
+
+.card-img-top{
+    border-radius: 20px;
+    cursor: pointer;
+    @include md{
+        max-height: 300px;
+        max-width: 100%;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+.text{
+    color: var(--text);
+}
+
+.blog-post-cta{
+    // display: inline-block;
+    padding: .5rem 2rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    // font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(to right, var(--navColor1) 0%, var(--navColor2) 100%);
+    border-radius: .8rem;
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+
+.top-news {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0 0;
+}
+
+.top-news .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.top-news .tn-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-news .tn-img img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.top-news .tn-img:hover img {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.top-news .tn-content {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding: 15px 10px 15px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
+    display: flex;
+    align-items: flex-end;
+    border-radius: 25px;
+}
+
+.top-news .tn-content a.tn-date{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+.top-news .tn-content a.tn-date i {
+    margin-right: 5px;
+}
+
+.top-news .tn-content a.tn-date:hover {
+    text-decoration: underline;
+}
+
+.top-news .tn-content a.tn-title {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.top-news {
+    .tn-left{
+        .tn-content{
+            .tn-title {
+                font-size: 20px;
+                font-weight: 500;
+                @include md{
+                    // font-size: 35px;
+                    // font-weight: 700;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        } 
+    } 
+}
+
+
+.top-news .tn-content a.tn-title:hover {
+    color: #E47A2E;
+}
+
+
+.overSpace{
+    overflow-x: hidden;
+    @include md{
+        
+    }
+}

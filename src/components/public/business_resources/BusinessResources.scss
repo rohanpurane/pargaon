@@ -1,0 +1,54 @@
+@import "../../../css-config/mixins.scss";
+@import "../../../css-config/Theme.scss";
+
+
+.content{
+    @include md{
+        min-height: 80vh;
+    }
+}
+
+.gride{
+    display: grid;
+    grid-template-columns: repeat((2, 1fr));
+    grid-gap: 10px;
+    @include md{
+        display: grid;
+        grid-template-columns: repeat((3, 1fr));
+        grid-gap: 10px;
+    }
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat((4, 1fr));
+        grid-gap: 15px;
+    }
+    @include xxl{
+        display: grid;
+        grid-template-columns: repeat((6, 1fr));
+        grid-gap: 20px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: var(--cardColor);
+        img{
+            width: 150px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            // text-align: center;
+            border-radius: 25px;
+            @include xxl{
+                width: 150px;
+                height: 150px;
+                // text-align: center;
+                border-radius: 25px;
+            }
+        }
+        .text{
+            color: var(--text);
+        }
+    }
+}
+

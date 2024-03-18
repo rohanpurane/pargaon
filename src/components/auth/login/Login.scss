@@ -1,0 +1,29 @@
+@import '../../../css-config/mixins.scss';
+@import '../../../css-config/Theme.scss';
+
+
+.box{
+    align-items: center;
+    justify-content: center;
+    .card{
+        background-color: var(--cardColor);
+        .small-card{
+            transform: translateY(-5rem);
+            box-shadow: 220px;
+            object-fit: cover;
+            display: block;
+            border-radius: .8rem;
+            border: none;
+            background-image: linear-gradient(to right, var(--navColor1) 0%, var(--navColor2) 100%);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 40px -7px;
+        }
+        h3{
+            color: var(--text);
+        }
+        
+        button{
+            background-image: linear-gradient(to right, var(--navColor1) 0%, var(--navColor2) 100%);
+            border: none;
+        }
+    }
+}
